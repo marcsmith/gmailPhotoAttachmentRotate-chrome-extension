@@ -1,11 +1,16 @@
 (function() {
 
 	var _init = function() {
-		_rotatePhoto();
+		_rotatePhotos();
 	};
 
-	var _rotatePhoto = function() {
-		document.getElementsByTagName('img')[0].style['-webkit-transform'] = 'rotate(90deg)';
+	var _rotatePhotos = function() {
+		var photos = document.getElementsByTagName('img');
+		var len = photos.length;
+		while(len) {
+			len--;
+			photos[len].style['-webkit-transform'] = 'rotate(90deg)';
+		}
 	};
 
 	return {
