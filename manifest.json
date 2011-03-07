@@ -1,0 +1,18 @@
+{
+  "name": "gmailPhotoAttachmentRotate",
+  "version": "0.1",
+  "description": "Rotate gmail photo attachment in browser after clicking \"View\".",
+  "background_page": "background.html",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "update_url": "https://github.com/marcsmith/gmailPhotoAttachmentRotate-chrome-extension/raw/master/updates.xml",
+  "permissions": [
+      "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "name": "Rotate attached gmail photo after clicking \"View\".",
+      "icons": ["icon.png"],
+	  "default_icon" : "icon48.png"
+  }
+}
